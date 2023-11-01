@@ -1,0 +1,243 @@
+{% extends 'blend/main.html' %}
+{% load static %}
+
+
+{% block content %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Select all FAQ items
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    // Add event listeners to each FAQ item
+    faqItems.forEach((item) => {
+        const plusButton = item.querySelector('.plus');
+        const minusButton = item.querySelector('.minus');
+        const answerSection = item.querySelector('.answer');
+
+        plusButton.addEventListener('click', () => {
+            console.log('Plus button clicked');
+            plusButton.style.display = 'none';
+            minusButton.style.display = 'inline';
+            answerSection.style.display = 'block';
+        });
+
+        minusButton.addEventListener('click', () => {
+            console.log('Minus button clicked');
+            plusButton.style.display = 'inline';
+            minusButton.style.display = 'none';
+            answerSection.style.display = 'none';
+        });
+    });
+});
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12">
+        <!-- FAQ Item 1 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">What services does Tech House offer?</h4>
+            <p class="answer" style="display: none;">
+                Tech House offers a range of tech services, including web development, mobile app development, software development, and IT consulting. We specialize in creating customized tech solutions for businesses.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">How can I request a quote for a project with Tech House?</h4>
+            <p class="answer" style="display: none;">
+                To request a quote, simply fill out the contact form on our website with details about your project. We'll get in touch with you to discuss your requirements and provide a customized quote.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">What industries does Tech House serve?</h4>
+            <p class="answer" style="display: none;">
+                Tech House serves a wide range of industries, including healthcare, e-commerce, finance, education, and more. We adapt our tech solutions to meet the specific needs of your industry.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">Can Tech House help with website maintenance and updates?</h4>
+            <p class="answer" style="display: none;">
+                Yes, we offer website maintenance and update services. Whether it's fixing bugs, adding new features, or keeping your website up to date, we have you covered.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 5 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">How long does it take to complete a typical tech project with Tech House?</h4>
+            <p class="answer" style="display: none;">
+                Project timelines can vary depending on the complexity and scope. We'll provide you with a project timeline and milestones during the initial consultation. We work efficiently to meet project deadlines.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 6 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">What technologies and programming languages does Tech House work with?</h4>
+            <p class="answer" style="display: none;">
+                Tech House is proficient in a wide range of technologies and programming languages, including but not limited to JavaScript, Python, Ruby, Java, React, Angular, and more. We stay updated with the latest tech trends.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 7 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">Does Tech House offer support and maintenance after a project is completed?</h4>
+            <p class="answer" style="display: none;">
+                Yes, we provide post-project support and maintenance to ensure your tech solutions run smoothly. Our support team is available to assist with any issues or updates you may need.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-6 col-md-6 col-sm-12">
+            <!-- FAQ Item 1 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">What services does Tech House offer?</h4>
+            <p class="answer" style="display: none;">
+                Tech House offers a range of tech services, including web development, mobile app development, software development, and IT consulting. We specialize in creating customized tech solutions for businesses.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">How can I request a quote for a project with Tech House?</h4>
+            <p class="answer" style="display: none;">
+                To request a quote, simply fill out the contact form on our website with details about your project. We'll get in touch with you to discuss your requirements and provide a customized quote.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">What industries does Tech House serve?</h4>
+            <p class="answer" style="display: none;">
+                Tech House serves a wide range of industries, including healthcare, e-commerce, finance, education, and more. We adapt our tech solutions to meet the specific needs of your industry.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">Can Tech House help with website maintenance and updates?</h4>
+            <p class="answer" style="display: none;">
+                Yes, we offer website maintenance and update services. Whether it's fixing bugs, adding new features, or keeping your website up to date, we have you covered.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 5 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">How long does it take to complete a typical tech project with Tech House?</h4>
+            <p class="answer" style="display: none;">
+                Project timelines can vary depending on the complexity and scope. We'll provide you with a project timeline and milestones during the initial consultation. We work efficiently to meet project deadlines.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 6 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">What technologies and programming languages does Tech House work with?</h4>
+            <p class="answer" style="display: none;">
+                Tech House is proficient in a wide range of technologies and programming languages, including but not limited to JavaScript, Python, Ruby, Java, React, Angular, and more. We stay updated with the latest tech trends.
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 7 -->
+    <div class="faq-item d-flex">
+        <div class="question mt-2 pe-3">
+            <i class="fas fa-plus plus"></i>
+            <i class="fas fa-minus minus" style="display: none;"></i>
+        </div>
+        <div>
+            <h4 class="mt-1">Does Tech House offer support and maintenance after a project is completed?</h4>
+            <p class="answer" style="display: none;">
+                Yes, we provide post-project support and maintenance to ensure your tech solutions run smoothly. Our support team is available to assist with any issues or updates you may need.
+            </p>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,116 @@
+
+<!------------------------------------------FOOTER-------------------------------------------->
+<div class="footer mt-5">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-6 col-md-12 col-sm-12 my-5">
+                <h2>
+                    People are saying things about what we do
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati commodi unde earum accusantium alias facilis nisi quas perspiciatis nam similique tenetur vel libero, veritatis praesentium nulla laboriosam sunt impedit rerum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad aliquam perspiciatis dolore perferendis reiciendis provident officiis laborum voluptatem architecto et incidunt culpa maiores reprehenderit nemo vero, quis, autem beatae.
+                </p>
+                <h1> <strong><em>//</em></strong></h1>
+
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit neque assumenda, dolor quos cupiditate sunt magni 
+                    officia ipsam rerum aperiam aliquam architecto maxime delectus ab incidunt ut optio temporibus tempore.
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 my-5">
+                <div class="contact">
+                    <div class="text-center">
+                        <i class="fas fa-rocket fa-2x"></i>
+                        <h3>Get Started</h3>
+                    </div>
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+                        <label for="email">Email</label>
+                        <input name="email" type="email" required="required" placeholder="Enter Your Email">
+                        
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="20" rows="1" placeholder="Enter Your Message"></textarea>
+                        
+                        <input type="submit" value="Send">
+                    </form>
+                    {% if custom_messages %}
+                        <ul class="custom-messages">
+                            {% for message in custom_messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </div>
+                
+            </div>
+        </div>
+
+
+        <div class="newsletter">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+                    <h2>Demo</h2>
+                    <p>Lorem ipsum dolor sit</p>
+
+
+                    <form method="POST" class="newsletter-form">
+                        {% csrf_token %}
+                        <div class="input-container">
+                            <input type="email" name="email" required="required" placeholder="Subscribe to newsletter" style="width: 300px;"> <!-- Adjust the width here -->
+                            <button class="email-button" type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                    <div class="news-info">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="footer-content">
+                        <div>
+                            <ul>
+                                <li><strong>Support</strong></li>
+                                <li>Help center</li>
+                                <li>Account Information</li>
+                                <li>About</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                
+                        <div>
+                            <ul>
+                                <li><strong>Help and Solution</strong></li>
+                                <li>Talk to support</li>
+                                <li>Support docs</li>
+                                <li>System status</li>
+                                <li>Covid Response</li>
+                            </ul>
+                        </div>
+                
+                        <div>
+                            <ul>
+                                <li> <strong>Product</strong> </li>
+                                <li>Update</li>
+                                <li>Security</li>
+                                <li>Data Test</li>
+                                <li>Pricing Product</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="copyright text-center">
+            © {% now "Y" %} Copyright. All rights reserved.
+        </div>
+        
+    </div>
+    
+
+</div>

@@ -1,0 +1,234 @@
+{% extends 'blend/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="my-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3>We are here to increase your productivity</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim libero ipsam natus, dolorum nemo nihil asperiores qui, optio ipsa animi facilis modi fuga iure. Id dolor repellat saepe architecto corrupti.</p>
+            <div class="overlay" id="overlay"></div>
+            
+            <div class="form-container">
+                <p class="text-white my-3">By submitting your email, a link to our app will be sent to your email.</p>
+                <span class="close-button" onclick="closeForm()">&#10006;</span>
+                <form method="POST" id="demo-form">
+                    {% csrf_token %}
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit" id="submit-button">Submit</button>
+                </form>
+            </div>
+            <button class="request my-4" onclick="showForm()">Request Demo</button>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="case">
+                <img src="{% static 'images/phone.jpg'%}" alt="phonemockup" class="styled-image">
+            </div>
+            
+            
+        </div>
+    </div>
+
+</div>
+
+
+<div class="info">
+    <h4 class="text-center my-5">More than 25,000 teams make use of Object Tech House</h4>
+    <ul>
+        <li>
+            <span><i class="fas fa-laptop"></i></span> Laptop
+        </li>
+
+        <li>
+            <span><i class="fas fa-comments"></i></span> Communication
+        </li>
+
+        <li>
+            <span><i class="fas fa-file-alt"></i></span> Description
+        </li>
+
+        <li>
+            <span><i class="fas fa-phone"></i></span> Phone
+        </li>
+        <li>
+             <span><i class="fas fa-check-circle"></i></span> Check
+        </li>
+    </ul>
+
+</div>
+
+
+
+<div class="my-5">
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+            <h1>How we support our partner all over the world</h1>
+            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cupiditate aut quod est ab atque, totam ex, corrupti nihil explicabo reiciendis cumque dolorum similique facilis quisquam deleniti modi adipisci distinctio!</p>
+
+           <div>
+            <div class="row">
+                <div class="col">
+                    <div class="col text-center bg-yellow">
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <div>
+                            <p>4.9/5 rating</p>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+                <div class="col">
+                    <div class="col text-center bg-yellow">
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star text-yellow"></i>
+                        <i class="fas fa-star "></i>
+                        <div>
+                            <p>4.8/5 rating</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 justify-content-center">
+            <div class="flex-container">
+                <div class="icon-container my-2">
+                    <span><i class="fas fa-chart-line"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus, 
+                        praesentium nesciunt sunt iusto voluptatibus aut dolorum ipsa adipisci tenetur doloremque tempore quasi, 
+                        veritatis voluptatem minima rem fuga nulla.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="icon-container my-2">
+                    <span><i class="fas fa-edit"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus, 
+                        praesentium nesciunt sunt iusto voluptatibus aut dolorum ipsa adipisci tenetur doloremque tempore quasi, 
+                        veritatis voluptatem minima rem fuga nulla.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="icon-container my-2">
+                    <span><i class="fas fa-bullseye"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus, 
+                        praesentium nesciunt sunt iusto voluptatibus aut dolorum ipsa adipisci tenetur doloremque tempore quasi, 
+                        veritatis voluptatem minima rem fuga nulla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="my-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>What Benefit Will You Get</h2>
+            <div class="flez-container my-2">
+                <div class="icon-contain">
+                    <span><i class="fas fa-check-circle"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus
+                    </p>
+                </div>
+            </div>
+
+            <div class="flez-container my-2">
+                <div class="icon-contain">
+                    <span><i class="fas fa-check-circle"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus
+                    </p>
+                </div>
+            </div>
+
+            <div class="flez-container my-2">
+                <div class="icon-contain">
+                    <span><i class="fas fa-check-circle"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus
+                    </p>
+                </div>
+            </div>
+
+            <div class="flez-container my-2">
+                <div class="icon-contain">
+                    <span><i class="fas fa-check-circle"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus
+                    </p>
+                </div>
+            </div>
+
+            <div class="flez-container my-2">
+                <div class="icon-contain">
+                    <span><i class="fas fa-check-circle"></i></span>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsam, minus
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="case">
+                <img src="{% static 'images/mart.jpg'%}" alt="phonemockup" class="styled-image">
+               
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
